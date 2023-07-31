@@ -1,7 +1,7 @@
 product = input().lower()
 day = input().lower()
 quantity = float(input())
-result = 0
+result = ''
 
 if day == 'saturday' or day == 'sunday':
     if product == 'banana':
@@ -37,4 +37,4 @@ else:
         result = quantity * 3.85
     else :    
         print('error')  
-print(round(result, 2))      
+    print(round(result, 2))      
