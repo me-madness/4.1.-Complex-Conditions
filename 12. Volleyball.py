@@ -1,13 +1,15 @@
+import math
+
 year = input()
-p = int(input())
+holidays = int(input())
 h = int(input())
 
-weekend-sofia = 
-play_sofia = 
-play total = 
+weekend_sofia = 48  * 0.75 
+play_sofia = weekend_sofia + (holidays * 0.666)
+play_total = play_sofia + (h / 2)
 
 if year == 'leap':
-    pass
+    play_total = play_total + (play_total * 0.15)
 else:
-    pass
-print()
+    play_total = play_total
+print(math.floor(play_total))
